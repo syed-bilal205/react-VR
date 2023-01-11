@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-     <div className='flex justify-between items-center text-white h-20 md:px-8'>
+     <div className='flex justify-between px-3 items-center text-white h-20 md:px-16'>
         <h1 className='text-3xl pl-2 font-bold tracking-wider cursor-pointer'>LIGHT</h1>
         <ul className='gap-4 items-center hidden md:flex text-xl md:gap-8'>
             <li className='cursor-pointer hover:border-b-2 ease-in-out duration-150 border-[#ab00fa] '>Home</li>
@@ -20,7 +20,7 @@ const Navbar = () => {
             <li className='cursor-pointer hover:border-b-2 ease-in-out duration-150 border-[#ab00fa]'>Feature</li>
             <li className='pr-2'><button className='font-medium h-12 px-8 bg-gradient-to-r from-[#b936f5] to-[#f1006c] rounded text-[15px] hover:bg-gradient-to-l hover:from-[#b936f5] hover:to-[#f1006c] outline-none flex items-center justify-center cursor-pointer;'>Sign Up</button></li>
         </ul>
-        <div onClick={handleClick} className='pr-2 block z-50  md:hidden'>
+        <div onClick={handleClick} className='pr-2 block z-50  cursor-pointer  md:hidden'>
             {
                 navbar ? <AiOutlineClose size={20} className='z-50'/> : <GiHamburgerMenu size={20}/>
             }
